@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='banner.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='team.css') }}">
+{% endblock %}
+
+{% block body %}
+                                             
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-712">
+    <div class="cs-container">
+        <span class="cs-int-title">Introducing The Team</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="{{ url_for('static', filename='images/sunset_team.jpg') }}">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="{{ url_for('static', filename='images/sunset_team.jpg') }}">
+        <img loading="lazy" decoding="async" src="{{ url_for('static', filename='images/sunset_team.jpg') }}" alt="pills" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+        
+<!-- ============================================ -->
+<!--                     Hero                     -->
+<!-- ============================================ -->
+
+<section id="hero-1946">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Living Stones - Young Adults On Fire For Christ</h2>
+            <div class="cs-flex">
+                <p class="cs-text">"As you come to him, the living Stone — rejected by humans but chosen by God and precious to him — you also, like living stones, are being built into a spiritual house 
+                    to be a holy priesthood, offering spiritual sacrifices acceptable to God through Jesus Christ"
+                    <br><br><span class="cs-name">1 Peter 2:4-5</span></p>
+            </div>
+        </div>
+        <picture class="cs-picture">
+            <source media="(min-width: 601px)" srcset="{{ url_for('static', filename='images/cg.jpg') }}">
+            <source media="(max-width: 600px)" srcset="{{ url_for('static', filename='images/cg.jpg') }}">
+            <img decoding="async" src="{{ url_for('static', filename='images/cg.jpg') }}" alt="construction site" width="1280" height="510">
+        </picture>
+    </div>
+</section>
+                        
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="RTsbs-249">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/hiking.jpg">
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/hiking.jpg">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/hiking.jpg" alt="hiker" width="434" height="434" aria-hidden="true">
+        </picture>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">Mountain Hiking Society</span>
+            <h2 class="cs-title">Explore the World with Exciting People</h2>
+            <p class="cs-text">
+                Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin nibh condimentum.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="RTsbsr-249">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/hiking.jpg">
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/hiking.jpg">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/hiking.jpg" alt="hiker" width="434" height="434" aria-hidden="true">
+        </picture>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">Mountain Hiking Society</span>
+            <h2 class="cs-title">Explore the World with Exciting People</h2>
+            <p class="cs-text">
+                Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin nibh condimentum.
+            </p>
+        </div>
+        <!-- Creates the faded lines on tablet -->
+        <span aria-hidden="true" class="cs-lines"></span>
+    </div>
+    <!-- Background Image -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Hero/Background-m.jpg">
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Hero/Background.jpg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/Background.jpg" alt="mountains" width="2250" height="1500" aria-hidden="true">
+    </picture>
+</section>
+               
+<!-- ============================================ -->
+<!--              Side By Side Triplet            -->
+<!-- ============================================ -->
+
+<section id="RTsbst-249">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/hiking.jpg">
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/hiking.jpg">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/hiking.jpg" alt="hiker" width="434" height="434" aria-hidden="true">
+        </picture>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">Mountain Hiking Society</span>
+            <h2 class="cs-title">Explore the World with Exciting People</h2>
+            <p class="cs-text">
+                Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin nibh condimentum.
+            </p>
+        </div>
+    </div>
+</section>
+                                
+                                
+
+{% endblock %}

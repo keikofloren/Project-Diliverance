@@ -6,22 +6,199 @@
 
 {% block body %}
 
-<section id="hero-1618">
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-229">
     <div class="cs-container">
-        <div class="cs-content">
-            <h1 class="cs-title">"For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them."</h1>
-            <h1 class="cs-subtitle">Ephesians 2:10</h1>
-            <div style="padding: 20px;"></div>
-            <a href="" class="cs-button-solid">Support us!</a>
+        <div class="cs-flex-group">
+            <span class="cs-topper">Supporting Cocoon's Mission to Change Lives Through Education</span>
+            <h1 class="cs-title">Project Diliverance</h1>
+            <p class="cs-text">
+                "For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them."<br> 
+                Ephesians 2:10
+            </p>
+            <div class="cs-button-group">
+                <button onclick="location.href='#why-choose-1634'" class="cs-button-solid cs-button">Explore More</button>
+                <a href="donate" class="cs-button-transparent cs-button">
+                    <img class="cs-img" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg" alt="play icon" width="17" height="17">
+                    Support Us
+                </a>
+            </div>
         </div>
     </div>
 
-    <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
-    <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="{{ url_for('static', filename='images/home_cover.jpg') }}">
-        <source media="(min-width: 601px)" srcset="{{ url_for('static', filename='images/home_cover.jpg') }}">
-        <img decoding="async" src="{{ url_for('static', filename='images/home_cover.jpg') }}" alt="meeting" width="2250" height="1500" aria-hidden="true">
+    <!-- Background Image -->
+    <picture class="cs-picture">
+        <source media="(max-width: 600px)" srcset="{{ url_for('static', filename='home.jpg') }}">
+        <source media="(min-width: 601px)" srcset="{{ url_for('static', filename='home.jpg') }}">
+        <img loading="lazy" decoding="async" src="{{ url_for('static', filename='home.jpg') }}" alt="mountains" width="2250" height="1500" aria-hidden="true">
     </picture>
-</section>                  
+</section>
+                                
+
+<!-- ============================================ -->
+<!--                  About                       -->
+<!-- ============================================ -->
+
+<section id="why-choose-1634">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">What is Project Diliverance?</span>
+                <h2 class="cs-title">Loving Our Neighbours</h2>
+            </div>
+            <p class="cs-text">
+                Project Diliverance is a youth-led mission trip to Dili, Timor Leste, in support of Cocoon's mission to change lives through education. Our trip will include fun-filled activities such as games, dances, and skits, as well as the sharing of our personal testimonies, and small group prayer sessions, which will culminate in a Christmas event for the children and youth. 
+                We seek to connect with and show love to the local children and youth, for we were first loved by the Father and have been commanded to "love your neighbour as yourself" (Matthew 22:39).
+            </p>
+        </div> 
+        <div class="cs-wrapper">
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon"
+                            srcset="{{ url_for('static', filename='home.jpg') }}"
+                                loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
+                    </picture>
+                    <!-- Text Grouped For Flexbox-->
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Answer a Few Questions</h3>
+                        <p class="cs-item-text">
+                            We welcome and celebrate different perspectives to help our firm, our clients and our people adip iscing elit achieve.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/call-gold.svg"
+                                loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
+                    </picture>
+                    <!-- Text Grouped For Flexbox-->
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Complimentary Call</h3>
+                        <p class="cs-item-text">
+                            We welcome and celebrate different perspectives to help our firm, our clients and our people adip iscing elit achieve.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/money-gold.svg"
+                                loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
+                    </picture>
+                    <!-- Text Grouped For Flexbox-->
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Grow Your Wealth</h3>
+                        <p class="cs-item-text">
+                            We welcome and celebrate different perspectives to help our firm, our clients and our people adip iscing elit achieve.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <div class="cs-image-group">
+                <div class="cs-picture-wrapper">
+                    <picture class="cs-picture cs-picture1">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{{ url_for('static', filename='images/about_diliverance_1.jpg') }}">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="{{ url_for('static', filename='images/about_diliverance_1.jpg') }}">
+                        <img loading="lazy" decoding="async" src="{{ url_for('static', filename='images/about_diliverance_1.jpg') }}" alt="meeting" width="434" height="414">
+                    </picture>
+                </div>
+                <picture class="cs-picture cs-picture2">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{{ url_for('static', filename='images/about_diliverance_2.jpg') }}">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="{{ url_for('static', filename='images/about_diliverance_2.jpg') }}">
+                    <img loading="lazy" decoding="async" src="{{ url_for('static', filename='images/about_diliverance_2.jpg') }}" alt="on computer" width="197" height="197">
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>                                                 
+
+<!-- ============================================ -->
+<!--                    Dili                      -->
+<!-- ============================================ -->
+
+<section id="gallery-1716">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Dili, Timor Leste</span>
+            <h2 class="cs-title">Where is Dili?</h2>
+            <!--If you remove the cs-text, the rectangle shape will disappear.  If you need to remove it, transfer the :before and .cs-text:last-of-type styles to the cs-title on mobile and desktop-->
+            <p class="cs-text">
+                Find out more about the needs of Dili, the capital of Timor Leste.
+            </p>
+            <a href="aboutdili" class="cs-button-solid">Let's go!</a>
+        </div>
+        <div class="cs-gallery">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)"
+                    srcset="{{ url_for('static', filename='images/where_1.jpg') }}">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)"
+                    srcset="{{ url_for('static', filename='images/where_1.jpg') }}">
+                <img loading="lazy" decoding="async"
+                    src="{{ url_for('static', filename='images/where_1.jpg') }}" alt="picture"
+                        width="480" height="549">
+            </picture>
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)"
+                    srcset="{{ url_for('static', filename='images/where_3.jpg') }}">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)"
+                    srcset="{{ url_for('static', filename='images/where_3.jpg') }}">
+                <img loading="lazy" decoding="async"
+                    src="{{ url_for('static', filename='images/where_3.jpg') }}" alt="picture"
+                        width="480" height="549">
+            </picture>
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)"
+                    srcset="{{ url_for('static', filename='images/where_2.jpg') }}">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)"
+                    srcset="{{ url_for('static', filename='images/where_2.jpg') }}">
+                <img loading="lazy" decoding="async"
+                    srcset="{{ url_for('static', filename='images/where_2.jpg') }}" alt="picture"
+                        width="480" height="549">
+            </picture>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Team                        -->
+<!-- ============================================ -->
+
+<section id="reviews-57">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="{{ url_for('static', filename='images/cg_1.jpg') }}">
+            <source media="(min-width: 601px)" srcset="{{ url_for('static', filename='images/cg_1.jpg') }}">
+            <img aria-hidden="true" loading="lazy" decoding="async" src="{{ url_for('static', filename='images/cg_1.jpg') }}" alt="man smiling" width="320" height="340">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">Who Are We</span>
+            <h2 class="cs-title">Introducing the Team</h2>
+            <p class="cs-text">
+                Behind the team of youths embarking on the mission trip is a fun-loving cell group that has grown up together over the years. 
+                Each of us is committed to supporting this trip in prayer and preparation, even as the team prepares to step into the mission field.
+            </p>
+            <p class="cs-review">
+                "As you come to him, the living Stone — rejected by humans but chosen by God and precious to him — you also, like living stones, are being built into a spiritual house 
+                to be a holy priesthood, offering spiritual sacrifices acceptable to God through Jesus Christ"
+                <span class="cs-name">1 Peter 2:4-5</span>
+            </p>
+            <a href="meettheteam" class="cs-button-solid">Read Our Testimonies</a>
+        </div>
+    </div>
+</section>
 
 {% endblock %}                                

@@ -4,7 +4,7 @@
         <div class="cs-container">
             <!--Nav Logo-->
             <a href="" class="cs-logo" aria-label="back to home">
-                <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Flogo-black.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+                <img src="/static/images/Project Diliverance.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
             </a>
             <!--Navigation List-->
             <nav class="cs-nav" role="navigation">
@@ -20,39 +20,64 @@
                 <div class="cs-ul-wrapper">
                     <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
                         <li class="cs-li">
-                            <a href="" class="cs-li-link cs-active">
+                            <a href="home" class="cs-li-link">
                                 Home
                             </a>
                         </li>
                         <li class="cs-li">
-                            <a href="" class="cs-li-link">
+                            <a href="aboutdili" class="cs-li-link">
                                 About Dili
                             </a>
                         </li>
                         <li class="cs-li">
-                            <a href="" class="cs-li-link">
+                            <a href="events" class="cs-li-link">
                                 Events
                             </a>
                         </li>
                         <li class="cs-li">
-                            <a href="" class="cs-li-link">
-                                Team
+                            <a href="meettheteam" class="cs-li-link">
+                                Meet The Team
                             </a>
                         </li>
                     </ul>
                 </div>
             </nav>
-            <a href="" class="cs-button-solid cs-nav-button">Support Us</a>
+            <a href="donate" class="cs-button-solid cs-nav-button">Support Us</a>
         </div>
     </header>
     <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/apple-touch-icon.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon-16x16.png') }}">
+        <link rel="manifest" href="{{ url_for('static', filename='images/site.webmanifest') }}">
         <title>Project Diliverance</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
     </head>
     {% block css %}{% endblock %}
     <body>
         {% block body %}{% endblock %}
         <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+        <!-- ============================================ -->
+        <!--                  Donate                      -->
+        <!-- ============================================ -->
+
+        <section id="cta-51">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Support Us</span>
+                    <h2 class="cs-title">Get Involved With Us Today</h2>
+                    <p class="cs-text">
+                        You can support us both financially and in prayer.
+                    </p>
+                    <a href="donate" class="cs-button-solid">Where To Donate?</a>
+                </div>
+            </div>
+            <!-- Background Image-->
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="{{ url_for('static', filename='images/bottom_banner.jpg') }}">
+                <source media="(min-width: 601px)" srcset="{{ url_for('static', filename='images/bottom_banner.jpg') }}">
+                <img loading="lazy" decoding="async" src="{{ url_for('static', filename='images/bottom_banner.jpg') }}" alt="cabinets" width="1920" height="1280" aria-hidden="true">
+            </picture>
+        </section>
     </body>                    
     </html>
