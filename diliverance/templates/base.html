@@ -26,37 +26,33 @@
                         </li>
                         <li class="cs-li">
                             <a href="" class="cs-li-link">
-                                About
+                                About Dili
                             </a>
                         </li>
                         <li class="cs-li">
                             <a href="" class="cs-li-link">
-                                Services
+                                Events
                             </a>
                         </li>
                         <li class="cs-li">
                             <a href="" class="cs-li-link">
-                                About Us
-                            </a>
-                        </li>
-                        <li class="cs-li">
-                            <a href="" class="cs-li-link">
-                                FAQ
+                                Team
                             </a>
                         </li>
                     </ul>
                 </div>
             </nav>
-            <a href="" class="cs-button-solid cs-nav-button">Contact Us</a>
+            <a href="" class="cs-button-solid cs-nav-button">Support Us</a>
         </div>
     </header>
-                                
-        <head>
-            <title>Project Diliverance</title>
-            <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-        </head>
-        <body>
-            {% block body %}{% endblock %}
-            <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-        </body>
+    <head>
+        <title>Project Diliverance</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
+    </head>
+    {% block css %}{% endblock %}
+    <body>
+        {% block body %}{% endblock %}
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </body>                    
     </html>
