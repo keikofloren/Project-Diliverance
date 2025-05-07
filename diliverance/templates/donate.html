@@ -81,41 +81,118 @@
 <!--                     Stats                    -->
 <!-- ============================================ -->
 
-<section id="stats-1687">
-    <div class="cs-container">
-        <div class="cs-wrapper">
-            <picture class="cs-picture">
-                <source media="(max-width: 600px)"
-                        srcset="{{ url_for('static', filename='images/paynow.jpg') }}">
-                <source media="(min-width: 601px)"
-                        srcset="{{ url_for('static', filename='images/paynow.jpg') }}">
-                <img loading="lazy" decoding="async"
-                        src="{{ url_for('static', filename='images/paynow.jpg') }}"
-                        alt="two people talking totally just friends" width="500" height="552">
-            </picture>
-            <div class="cs-content">
-                <h2 class="cs-title">Make A Donation</h2>
-                <p class="cs-text">
-                    Please use the QR code on this page and indicate "diliyouth" if you are supporting us financially.
-                    Thank you for your love and support!
-                </p>
-                <ul class="cs-ul">
-                    <li class="cs-li">
-                        Your donations will go towards:
-                    </li>
-                    <li class="cs-li">
-                        • Education and employment prospects are elusive to the Timorese, rendering them stuck in a cycle of poverty. 
-                    </li>
-                    <li class="cs-li">
-                        • Flooding issues have left Cocoon with an urgent need of raising funds to flood-proof their school compound.
-                    </li>
-                    <li class="cs-li">
-                        • This young and spiritually scarred country is in great need of prayer for a national transformation
-                    </li>
-                </ul>
-            </div>
-        </div>
+<style>
+    :root {
+      --card-bg: #ffffff;
+      --card-radius: 12px;
+      --card-shadow: rgba(0, 0, 0, 0.1);
+      --gap: 1.5rem;
+      --max-width: 800px;
+      --primary-color: #2c3e50;
+      --accent-color: #2980b9;
+      --text-color: #34495e;
+      --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  
+    .donation-card {
+      background: var(--card-bg);
+      border-radius: var(--card-radius);
+      box-shadow: 0 4px 12px var(--card-shadow);
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: var(--max-width);
+      display: flex;
+      gap: var(--gap);
+      align-items: center;
+    }
+  
+    .qr-wrapper {
+      flex: 0 0 auto;
+      text-align: center;
+      min-width: 180px;
+      max-width: 260px;
+      margin: 0 auto;
+    }
+  
+    #dynamic-qr {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border: 2px solid var(--accent-color);
+      border-radius: 8px;
+      padding: 0.5rem;
+      background: #fafafa;
+    }
+  
+    .text-content {
+      flex: 1 1 300px;
+      font-family: var(--font-family);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+  
+    .text-content h2 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      color: var(--primary-color);
+      font-size: 1.75rem;
+    }
+  
+    .text-content p {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+  
+    .text-content ul {
+      padding-left: 1.2rem;
+      margin: 0;
+    }
+  
+    .text-content li {
+      margin-bottom: 0.75rem;
+    }
+  
+    /* Mobile */
+    @media (max-width: 600px) {
+      .donation-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+        gap: 1rem;
+      }
+  
+      .qr-wrapper {
+        max-width: 200px;
+      }
+  
+      .text-content h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+  
+  <section class="donation-card">
+    <div class="qr-wrapper">
+      <img 
+        id="dynamic-qr"
+        loading="lazy"
+        decoding="async"
+        src="{{ url_for('static', filename='images/paynow.jpg') }}"
+        alt="Donation QR Code"
+      >
     </div>
-</section>
+  
+    <div class="text-content">
+      <h2>Make A Donation</h2>
+      <p>Please scan the QR code above and indicate <strong>diliyouth</strong> as your reference when donating.</p>
+      <ul>
+        <li>Improving infrastructure to protect against flooding and provide a safe, secure place for children to live, learn, and grow.</li>
+        <li>Providing food, clothing, and basic necessities that ensure these children are cared for in body and spirit.</li>
+        <li>Every gift, no matter the size, makes a lasting impact—building a foundation for a better tomorrow.</li>
+        <li>Join us in bringing light, hope, and healing to Timorese children. Thank you for your love and support!</li>
+      </ul>
+    </div>
+  </section>
+  
                                 
                                 
