@@ -1,200 +1,86 @@
-/*-- -------------------------- -->
-<---           Stats            -->
-<--- -------------------------- -*/
+:root {
+  --card-bg: #ffffff;
+  --card-radius: 12px;
+  --gap: 1.5rem;
+  --max-width: 1200px;
+}
 
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #stats-1687 {
-    padding: var(--sectionPadding);
-  }
-  #stats-1687 .cs-container {
-    width: 100%;
-    /* changes to 1920px at tablet */
-    max-width: 36.5rem;
-    margin: auto;
-    display: flex;
+.donation-card {
+  background: var(--card-bg);
+  border-radius: var(--card-radius);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: var(--max-width);
+  display: flex;
+  gap: var(--gap);
+  align-items: center;
+}
+
+.qr-wrapper {
+  flex: 0 0 auto;
+  text-align: center;
+  min-width: 180px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#dynamic-qr {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  padding: 0.5rem;
+  background: #fafafa;
+}
+
+.text-content {
+  flex: 1 1 300px;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.text-content h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  font-size: 3.5rem;
+}
+
+.text-content p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: #4e4b66;
+}
+
+.text-content ul {
+  padding-left: 1.2rem;
+  margin: 0;
+  font-size: 1.25rem;
+  color: #4e4b66;
+}
+
+.text-content li {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  color: #4e4b66;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .donation-card {
     flex-direction: column;
-    align-items: stretch;
-    /* 48px - 100px */
-    gap: clamp(3rem, 7vw, 6.25rem);
-  }
-  #stats-1687 .cs-wrapper {
-    width: 100%;
-    /* 48px - 64px */
-    max-width: 80rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
-  }
-  #stats-1687 .cs-content {
-    /* set text align to left if content needs to be left aligned */
     text-align: left;
-    width: 100%;
-    max-width: 33.875rem;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: flex-start;
+    padding: 1.5rem;
+    gap: 1rem;
   }
-  #stats-1687 .cs-text {
-    margin-bottom: 1rem;
-  }
-  #stats-1687 .cs-text:last-of-type {
-    margin-bottom: 2rem;
-  }
-  #stats-1687 .cs-button-solid {
-    font-size: 1rem;
-    font-weight: 700;
-    /* 46px - 56px */
-    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-    text-align: center;
-    text-decoration: none;
-    min-width: 9.375rem;
-    margin: 0;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
-    padding: 0 1.5rem;
-    background-color: var(--primary);
-    color: #fff;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-  }
-  #stats-1687 .cs-button-solid:before {
-    content: "";
-    width: 0%;
-    height: 100%;
-    background: #000;
-    opacity: 1;
-    border-radius: 0.25rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: width 0.3s;
-  }
-  #stats-1687 .cs-button-solid:hover:before {
-    width: 100%;
-  }
-  #stats-1687 .cs-picture {
-    width: 100%;
-    max-width: 39.375rem;
-    height: auto;
-    /* 400px - 600px */
-    min-height: clamp(25rem, 68vw, 37.5rem);
-    margin: 0;
-    display: block;
-    position: relative;
-    z-index: 1;
-    align-self: stretch;
-  }
-  #stats-1687 .cs-picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  #stats-1687 .cs-card-group {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-auto-flow: row;
-    /* 16px - 40px */
-    gap: clamp(1rem, 3vw, 2.5rem);
-  }
-  #stats-1687 .cs-item {
-    width: 100%;
-    /* 20px - 40px */
-    padding: clamp(1.25rem, 3vw, 2.5rem);
-    background-color: #f7f7f7;
-    overflow: hidden;
-    display: flex;
-    /* 24px - 80px */
-    flex-direction: column;
-    gap: clamp(1.5rem, 6vw, 5rem);
-    position: relative;
-  }
-  #stats-1687 .cs-h3 {
-    /* 16px - 20px */
-    font-size: clamp(1rem, 2vw, 1.25rem);
-    font-weight: 700;
-    line-height: 1.2em;
-    margin: 0;
-    color: var(--primary);
-    z-index: 1;
-  }
-  #stats-1687 .cs-number {
-    /* 49px - 61px */
-    font-size: clamp(3.0625rem, 5vw, 3.8125rem);
-    font-weight: 900;
-    line-height: 1.2em;
-    color: var(--headerColor);
-    z-index: 1;
-  }
-  #stats-1687 .cs-graphic {
-    /* 131px - 233px */
-    width: clamp(8.1875rem, 16vw, 14.5625rem);
-    /* 131px - 233px */
-    height: clamp(8.1875rem, 16vw, 14.5625rem);
-    position: absolute;
-    /* -49px - -37px */
-    right: clamp(-3.0625rem, -4vw, -2.3125rem);
-    /* -8px - -40px */
-    bottom: calc(clamp(0.5rem, 3vw, 2.5rem) * -1);
-    z-index: 0;
-  }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #stats-1687 .cs-container {
-    max-width: 120rem;
-  }
-  #stats-1687 .cs-wrapper {
-    display: grid;
-    align-items: stretch;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem;
-  }
-  #stats-1687 .cs-content {
-    padding: 4rem 0;
-    align-self: center;
-  }
-  #stats-1687 .cs-picture {
-    /* sends it to the right in the 2nd position */
-    order: 2;
-  }
-  #stats-1687 .cs-card-group {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
 
-#stats-1687 .cs-ul {
-  width: 100%;
-  margin: 0 0 1.5rem 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.75rem;
-}
-#stats-1687 .cs-li {
-  font-size: var(--bodyFontSize);
-  list-style: none;
-  line-height: 1.5em;
-  width: 100%;
-  color: var(--bodyTextColor);
-  display: flex;
-  justify-content: flex-start;
-  /* push icon top the top so if the list item goes to two lines the icon stays at the top */
-  align-items: flex-start;
-  gap: 0.5rem;
-}
-                                
-                                
+  .qr-wrapper {
+    max-width: 200px;
+  }
+
+  .text-content h2 {
+    font-size: 2rem;
+  }
+}                        
+                            
