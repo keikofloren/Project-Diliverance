@@ -8,6 +8,7 @@
       padding: var(--sectionPadding);
       /* 160px - 200px */
       padding-top: clamp(4rem, 20vw, 6rem);
+      padding-bottom: clamp(1rem, 20vw, 1rem);
       overflow: hidden;
       position: relative;
       z-index: 1;
