@@ -56,16 +56,20 @@
     <div class="cs-container">
         <!-- Left Image Section -->
         <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/hiking.jpg">
-            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/hiking.jpg">
-            <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/hiking.jpg" alt="hiker" width="434" height="434" aria-hidden="true">
+            <source media="(max-width: 600px)" srcset="{{ url_for('static', filename='images/keiko.jpg') }}">
+            <source media="(min-width: 601px)" srcset="{{ url_for('static', filename='images/keiko.jpg') }}">
+            <img loading="lazy" decoding="async" src="{{ url_for('static', filename='images/keiko.jpg') }}" alt="hiker" width="434" height="434" aria-hidden="true">
         </picture>
         <!-- Right Content Section-->
         <div class="cs-content">
-            <span class="cs-topper">Mountain Hiking Society</span>
-            <h2 class="cs-title">Explore the World with Exciting People</h2>
+            <span class="cs-topper">Goer</span>
+            <h2 class="cs-title">Keiko Ang</h2>
             <p class="cs-text">
-                Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin nibh condimentum.
+                Despite having been to Indonesia countless times to visit my extended family, I was still taken aback by the harsh living conditions of Timor Leste. 
+                Electricity blackouts were common, hot water was a luxury, and the abundance of cockcroaches kept me constantly on my toes due to my terrible fear of insects. 
+                <br><br> However, what really stood out to me and challenged my faith was the resilience of the Timorese in serving God and His people, and to worship Him joyfully amidst these circumstances.
+                If I had been put in the same circumstances as them - facing persistent, violent persecution for my faith - would I still have been able to worship God with that same passion?
+                And how can I learn to be more grateful for what God has blessed me with back in Singapore, to be more willing to serve Him joyfully with these gifts?
             </p>
         </div>
     </div>

@@ -307,10 +307,10 @@ body {
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #why-choose-1634 {
+    #about-project-diliverance {
       padding: var(--sectionPadding);
     }
-    #why-choose-1634 .cs-container {
+    #about-project-diliverance .cs-container {
       width: 100%;
       /* changes to 1280px at tablet */
       max-width: 36.5rem;
@@ -321,7 +321,7 @@ body {
       /* 48px - 100px */
       gap: clamp(3rem, 10vw, 6.25rem);
     }
-    #why-choose-1634 .cs-content {
+    #about-project-diliverance .cs-content {
       /* set text align to left if content needs to be left aligned */
       text-align: left;
       width: 100%;
@@ -330,22 +330,22 @@ body {
       /* centers content horizontally, set to flex-start to left align */
       align-items: flex-start;
     }
-    #why-choose-1634 .cs-flex {
+    #about-project-diliverance .cs-flex {
       max-width: 38.5rem;
     }
-    #why-choose-1634 .cs-title {
+    #about-project-diliverance .cs-title {
       max-width: 20ch;
     }
-    #why-choose-1634 .cs-text {
+    #about-project-diliverance .cs-text {
       margin-bottom: 1rem;
     }
-    #why-choose-1634 .cs-text:last-of-type {
+    #about-project-diliverance .cs-text:last-of-type {
       margin-bottom: 0;
     }
-    #why-choose-1634 .cs-wrapper {
+    #about-project-diliverance .cs-wrapper {
       width: 100%;
     }
-    #why-choose-1634 .cs-card-group {
+    #about-project-diliverance .cs-card-group {
       width: 100%;
       margin: 0;
       padding: 0;
@@ -355,7 +355,7 @@ body {
       /* 16px - 20px */
       column-gap: clamp(1rem, 2.3vw, 1.25rem);
     }
-    #why-choose-1634 .cs-item {
+    #about-project-diliverance .cs-item {
       text-align: left;
       list-style: none;
       width: 100%;
@@ -368,7 +368,7 @@ body {
       /* 16px - 24px */
       gap: clamp(1rem, 3vw, 1.5rem);
     }
-    #why-choose-1634 .cs-icon-wrapper {
+    #about-project-diliverance .cs-icon-wrapper {
       /* 60px - 80px */
       width: clamp(3.75rem, 7vw, 5rem);
       height: clamp(3.75rem, 7vw, 5rem);
@@ -382,12 +382,12 @@ body {
       /* prevents flexbox from squishing it */
       flex: none;
     }
-    #why-choose-1634 .cs-icon {
+    #about-project-diliverance .cs-icon {
       width: 2rem;
       height: auto;
       display: block;
     }
-    #why-choose-1634 .cs-h3 {
+    #about-project-diliverance .cs-h3 {
       font-size: 1.25rem;
       line-height: 1.5em;
       margin: 0;
@@ -395,7 +395,7 @@ body {
       color: var(--headerColor);
       text-align: inherit;
     }
-    #why-choose-1634 .cs-item-text {
+    #about-project-diliverance .cs-item-text {
       /* 14px - 16px */
       font-size: clamp(0.875rem, 1.5vw, 1rem);
       line-height: 1.5em;
@@ -403,11 +403,11 @@ body {
       color: var(--bodyTextColor);
       text-align: inherit;
     }
-    #why-choose-1634 .cs-wrapper {
+    #about-project-diliverance .cs-wrapper {
       /* makes the contents of this container act as though the container doesn't exist. They are now children of the cs-container so they can be positioned around each other. This allows us to sue the order property to place the cs-image-group at the top of the page on mobile */
       display: contents;
     }
-    #why-choose-1634 .cs-image-group {
+    #about-project-diliverance .cs-image-group {
       font-size: min(2.7vw, 1em);
       width: 33.875em;
       height: 30.875em;
@@ -416,7 +416,7 @@ body {
       position: relative;
       z-index: 1;
     }
-    #why-choose-1634 .cs-picture-wrapper {
+    #about-project-diliverance .cs-picture-wrapper {
       width: 80.073801%;
       height: 83.805668%;
       display: flex;
@@ -428,7 +428,7 @@ body {
       top: 0;
       left: 0;
     }
-    #why-choose-1634 .cs-box {
+    #about-project-diliverance .cs-box {
       width: 60%;
       margin-top: -2.375em;
       margin-left: 1.5em;
@@ -441,7 +441,7 @@ body {
       position: relative;
       z-index: 10;
     }
-    #why-choose-1634 .cs-header {
+    #about-project-diliverance .cs-header {
       font-size: 1em;
       line-height: 1.2em;
       font-weight: 700;
@@ -449,18 +449,18 @@ body {
       color: var(--headerColor);
       display: block;
     }
-    #why-choose-1634 .cs-desc {
+    #about-project-diliverance .cs-desc {
       font-size: 0.875em;
       line-height: 1.5em;
       margin: 0;
       color: var(--primary);
       display: block;
     }
-    #why-choose-1634 .cs-picture {
+    #about-project-diliverance .cs-picture {
       position: relative;
       z-index: 1;
     }
-    #why-choose-1634 .cs-picture img {
+    #about-project-diliverance .cs-picture img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -468,11 +468,11 @@ body {
       top: 0;
       left: 0;
     }
-    #why-choose-1634 .cs-picture1 {
+    #about-project-diliverance .cs-picture1 {
       width: 100%;
       height: 100%;
     }
-    #why-choose-1634 .cs-picture2 {
+    #about-project-diliverance .cs-picture2 {
       width: 36.346863%;
       height: 39.878543%;
       position: absolute;
@@ -482,48 +482,48 @@ body {
   }
   /* Tablet - 768px */
   @media only screen and (min-width: 48rem) {
-    #why-choose-1634 .cs-container {
+    #about-project-diliverance .cs-container {
       max-width: 80rem;
     }
-    #why-choose-1634 .cs-content {
+    #about-project-diliverance .cs-content {
       flex-direction: row;
       justify-content: center;
       align-items: center;
     }
-    #why-choose-1634 .cs-flex {
+    #about-project-diliverance .cs-flex {
       text-align: left;
       width: 40vw;
       max-width: 40rem;
       flex: none;
     }
-    #why-choose-1634 .cs-title {
+    #about-project-diliverance .cs-title {
       margin: 0;
     }
-    #why-choose-1634 .cs-h3,
-    #why-choose-1634 .cs-item-text {
+    #about-project-diliverance .cs-h3,
+    #about-project-diliverance .cs-item-text {
       text-align: left;
     }
-    #why-choose-1634 .cs-item {
+    #about-project-diliverance .cs-item {
       grid-column: span 4;
     }
-    #why-choose-1634 .cs-image-group {
+    #about-project-diliverance .cs-image-group {
       width: 100%;
     }
   }
   /* Small Desktop - 1024px */
   @media only screen and (min-width: 64rem) {
-    #why-choose-1634 {
+    #about-project-diliverance {
       /* set the darker background color on the main div */
       background-color: #F8F5F1;
       overflow: hidden;
     }
-    #why-choose-1634 .cs-content {
+    #about-project-diliverance .cs-content {
       align-items: flex-start;
     }
-    #why-choose-1634 .cs-flex {
+    #about-project-diliverance .cs-flex {
       width: 50%;
     }
-    #why-choose-1634 .cs-wrapper {
+    #about-project-diliverance .cs-wrapper {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -532,7 +532,7 @@ body {
       position: relative;
       z-index: 1;
     }
-    #why-choose-1634 .cs-wrapper:before {
+    #about-project-diliverance .cs-wrapper:before {
       /* make the white space dependant on the height of the cs-wrapper as a pseudo element attached to the cs wrapper. This makes the white background responsive to the amount of items you have in your list. When the list grows or shrinks, the design will maintain its same spacing */
       content: '';
       width: 100vw;
@@ -546,13 +546,13 @@ body {
       z-index: -1;
       transform: translateX(-50%);
     }
-    #why-choose-1634 .cs-card-group {
+    #about-project-diliverance .cs-card-group {
       max-width: 39.375rem;
       /* use padding to push add the same amount of space between the content and the top of the card group as the negative margin top value on the cs-image-group. This makes sure that it counter acts the effects of the negative margin affecting the card group as well */
       padding-top: 3rem;
       align-self: flex-start;
     }
-    #why-choose-1634 .cs-image-group {
+    #about-project-diliverance .cs-image-group {
       width: 33.875em;
       /* by setting height to auto, it will stretch to fill the container height. So when you add or subtract more cards and change the height of the container, the image group will shrink as well. Thats why we set the heights of the images in percentages. They will always be X% tall inside the cs-image-group. So when the image group stretches to match the container height, the pictures percentage height also grows proportionally. This ensures the design responds to changes in height from the card section on the left. */
       height: auto;
@@ -562,7 +562,7 @@ body {
       order: 2;
       flex: none;
     }
-    #why-choose-1634 .cs-item {
+    #about-project-diliverance .cs-item {
       grid-column: span 12;
       flex-direction: row;
     }
@@ -866,110 +866,6 @@ body {
         flex: none;
         /* sends it to the right in the second position */
         order: 2;
-    }
-}
-
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-    #cta-51 {
-        padding: var(--sectionPadding);
-        position: relative;
-    }
-    #cta-51 .cs-container {
-        width: 100%;
-        max-width: 80rem;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* 48px - 64px */
-        gap: clamp(3rem, 6vw, 4rem);
-    }
-    #cta-51 .cs-content {
-        /* set text align to left if content needs to be left aligned */
-        text-align: center;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        /* centers content horizontally, set to flex-start to left align */
-        align-items: center;
-    }
-
-    #cta-51 .cs-title {
-        color: var(--bodyTextColorWhite);
-    }
-    #cta-51 .cs-text {
-        margin-bottom: 1rem;
-        color: var(--bodyTextColorWhite);
-        opacity: 0.8;
-    }
-    #cta-51 .cs-text:last-of-type {
-        margin-bottom: 2rem;
-    }
-    #cta-51 .cs-button-solid {
-        font-size: 1rem;
-        /* 46px - 56px */
-        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-        text-decoration: none;
-        font-weight: 700;
-        text-align: center;
-        margin: 0;
-        color: #fff;
-        min-width: 9.375rem;
-        padding: 0 1.5rem;
-        background-color: var(--primary);
-        border-radius: 0.25rem;
-        display: inline-block;
-        position: relative;
-        z-index: 1;
-        /* prevents padding from adding to the width */
-        box-sizing: border-box;
-    }
-    #cta-51 .cs-button-solid:before {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 0%;
-        background: #000;
-        opacity: 1;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        border-radius: 0.25rem;
-        transition: width 0.3s;
-    }
-    #cta-51 .cs-button-solid:hover:before {
-        width: 100%;
-    }
-    #cta-51 .cs-picture {
-        height: 100%;
-        width: 100%;
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-    }
-    #cta-51 .cs-picture:before {
-        /* black color overlay */
-        content: "";
-        position: absolute;
-        display: block;
-        height: 100%;
-        width: 100%;
-        background: #000;
-        opacity: 0.8;
-        top: 0;
-        left: 0;
-        z-index: 1;
-    }
-    #cta-51 .cs-picture img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
     }
 }
 
