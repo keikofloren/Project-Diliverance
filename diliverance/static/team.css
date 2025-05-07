@@ -7,7 +7,7 @@
     #hero-1946 {
       padding: var(--sectionPadding);
       /* 160px - 200px */
-      padding-top: clamp(10rem, 20vw, 12.5rem);
+      padding-top: clamp(4rem, 20vw, 6rem);
       overflow: hidden;
       position: relative;
       z-index: 1;
@@ -41,7 +41,7 @@
     }
     #hero-1946 .cs-title {
       /* 39px - 61px */
-      font-size: clamp(2.438rem, 5vw, 3.813rem);
+      font-size: clamp(2.438rem, 5vw, 3rem);
     }
     #hero-1946 .cs-text {
       margin-bottom: 1.25rem;
@@ -83,7 +83,7 @@
     #hero-1946 .cs-picture img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       border-radius: 2.5rem;
       position: absolute;
     }
@@ -270,7 +270,7 @@
         font-weight: 700;
         text-align: center;
         margin: 0;
-        color: #fff;
+        color: #ffffff00;
         min-width: 9.375rem;
         padding: 0 1.5rem;
         background-color: var(--primary);
@@ -307,7 +307,7 @@
         width: 100%;
         max-width: 27.125rem;
         margin: 0;
-        border: 1px solid #f1f1f4;
+        border: 0px solid #f1f1f400;
         position: relative;
         display: block;
         /* width divided by height */
@@ -347,60 +347,7 @@
         transform: translateX(-50%);
         z-index: -1;
     }
-    #RTsbs-249 .cs-lines:before,
-    #RTsbsr-249 .cs-lines:before,
-    #RTsbst-249 .cs-lines:before {
-        /* Right Line */
-        content: "";
-        width: 1px;
-        height: 100%;
-        background: -moz-linear-gradient(
-            top,
-            rgba(250, 251, 252, 0.5) 0%,
-            rgba(250, 251, 252, 0) 100%
-        );
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(
-            top,
-            rgba(250, 251, 252, 0.5) 0%,
-            rgba(250, 251, 252, 0) 100%
-        );
-        /* Chrome10-25,Safari5.1-6 */
-        opacity: 1;
-        position: absolute;
-        display: block;
-        top: 0;
-        left: 0;
-        /* flips vertically */
-        transform: scaleY(-1);
-    }
-    #RTsbs-249 .cs-lines:after,
-    #RTsbsr-249 .cs-lines:after,
-    #RTsbst-249 .cs-lines:after {
-        /* Right Line */
-        content: "";
-        width: 1px;
-        height: 100%;
-        background: -moz-linear-gradient(
-            top,
-            rgba(250, 251, 252, 0.5) 0%,
-            rgba(250, 251, 252, 0) 100%
-        );
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(
-            top,
-            rgba(250, 251, 252, 0.5) 0%,
-            rgba(250, 251, 252, 0) 100%
-        );
-        /* Chrome10-25,Safari5.1-6 */
-        opacity: 1;
-        position: absolute;
-        display: block;
-        top: 0;
-        right: 0;
-        /* flips vertically */
-        transform: scaleY(-1);
-    }
+
     #RTsbs-249 .cs-picture,
     #RTsbsr-249 .cs-picture,
     #RTsbst-249 .cs-picture {
@@ -415,6 +362,42 @@
         margin: 0;
         width: 45%;
     }
+}
+
+/*-- -------------------------- -->
+<---          Reviews           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #reviews-1739 {
+    padding: var(clamp(1.75rem, 7.82vw, 5rem) 1rem);
+    position: relative;
+  }
+  #reviews-1739 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #reviews-1739 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #reviews-1739 .cs-title {
+    max-width: 35ch;
+    margin: 0;
+  }
 }
 
 /*-- -------------------------- -->
@@ -433,16 +416,16 @@
     #RTsbsr-249 .cs-container:before {
         /* Left Line */
         content: "";
-        width: 1px;
+        width: 0px;
         height: 100%;
         background: linear-gradient(
             top,
-            rgba(250, 251, 252, 0.5) 0%,
+            rgba(250, 251, 252, 0) 0%,
             rgba(250, 251, 252, 0) 100%
         );
         background: -webkit-linear-gradient(
             top,
-            rgba(250, 251, 252, 0.5) 0%,
+            rgba(250, 251, 252, 0) 0%,
             rgba(250, 251, 252, 0) 100%
         );
         /* Chrome10-25,Safari5.1-6 */
@@ -455,17 +438,17 @@
     #RTsbsr-249 .cs-container:after {
         /* Right Line */
         content: "";
-        width: 1px;
+        width: 0px;
         height: 100%;
         background: -moz-linear-gradient(
             top,
-            rgba(250, 251, 252, 0.5) 0%,
+            rgba(250, 251, 252, 0) 0%,
             rgba(250, 251, 252, 0) 100%
         );
         /* FF3.6-15 */
         background: -webkit-linear-gradient(
             top,
-            rgba(250, 251, 252, 0.5) 0%,
+            rgba(250, 251, 252, 0) 0%,
             rgba(250, 251, 252, 0) 100%
         );
         /* Chrome10-25,Safari5.1-6 */
@@ -542,13 +525,13 @@
         height: 100%;
         background: -moz-linear-gradient(
             top,
-            rgba(250, 251, 252, 0.5) 0%,
+            rgba(250, 251, 252, 0) 0%,
             rgba(250, 251, 252, 0) 100%
         );
         /* FF3.6-15 */
         background: -webkit-linear-gradient(
             top,
-            rgba(250, 251, 252, 0.5) 0%,
+            rgba(250, 251, 252, 0) 0%,
             rgba(250, 251, 252, 0) 100%
         );
         /* Chrome10-25,Safari5.1-6 */
@@ -567,13 +550,13 @@
         height: 100%;
         background: -moz-linear-gradient(
             top,
-            rgba(250, 251, 252, 0.5) 0%,
+            rgba(250, 251, 252, 0) 0%,
             rgba(250, 251, 252, 0) 100%
         );
         /* FF3.6-15 */
         background: -webkit-linear-gradient(
             top,
-            rgba(250, 251, 252, 0.5) 0%,
+            rgba(250, 251, 252, 0) 0%,
             rgba(250, 251, 252, 0) 100%
         );
         /* Chrome10-25,Safari5.1-6 */
@@ -593,7 +576,7 @@
 /* Desktop - 1500px (Parallax Effect) */
 @media only screen and (min-width: 93.75em) {
     #RTsbsr-249 {
-        background: url("https://csimg.nyc3.digitaloceanspaces.com/Hero/Background.jpg");
+        background: url("/static/images/khanh_background.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -604,5 +587,4 @@
         display: none;
     }
 }
-
                                 

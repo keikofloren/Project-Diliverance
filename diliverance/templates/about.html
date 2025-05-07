@@ -33,10 +33,10 @@
         <div class="cs-image-group">
             <picture class="cs-background">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people10.jpg">
+                <source media="(max-width: 600px)" srcset="{{ url_for('static', filename='images/cocoon.jpg') }}">
                 <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people10.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people10.jpg" alt="people" width="605868" height="690">
+                <source media="(min-width: 601px)" srcset="{{ url_for('static', filename='images/cocoon.jpg') }}">
+                <img loading="lazy" decoding="async" src="{{ url_for('static', filename='images/cocoon.jpg') }}" alt="people" width="605868" height="690">
             </picture>
         </div>
         <div class="cs-content">
@@ -44,24 +44,19 @@
             <h2 class="cs-title">Dili - Capital of Timor Leste</h2>
             <ul class="cs-ul">
                 <li class="cs-li">
-                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/black-check.svg" alt="checkmark" width="24" height="24">
-                    Dili is the capital of the youngest countries in the world, Timor-Leste.
+                    • Dili is the capital of the youngest countries in the world, Timor-Leste.
                 </li>
                 <li class="cs-li">
-                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/black-check.svg" alt="checkmark" width="24" height="24">
-                    Houses half of the urban population (15% of Timor’s entire population). 
+                    • Houses half of the urban population (15% of Timor’s entire population). 
                 </li>
                 <li class="cs-li">
-                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/black-check.svg" alt="checkmark" width="24" height="24">
-                    As of 2020, the adult literacy rate is 69.9% (below the world average of 86.81%).
+                    • As of 2020, the adult literacy rate is 69.9% (below the world average of 86.81%).
                 </li>
                 <li class="cs-li">
-                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/black-check.svg" alt="checkmark" width="24" height="24">
-                    42% of the Timor population lives below the national poverty line (one of the poorest countries in the world).
+                    • 42% of the Timor population lives below the national poverty line (one of the poorest countries in the world).
                 </li>
                 <li class="cs-li">
-                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/black-check.svg" alt="checkmark" width="24" height="24">
-                    Although Timor is predominantly Catholic (98%), many are Catholic by name only. They attend mass, but nonetheless still practice animal and nature worship. 
+                    • Although Timor is predominantly Catholic (98%), many are Catholic by name only. They attend mass, but nonetheless still practice animal and nature worship. 
                 </li>
             </ul>
             <ul class="cs-card-group">
@@ -71,16 +66,13 @@
                     </h3>
                     <ul class="cs-ul">
                         <li class="cs-li">
-                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/black-check.svg" alt="checkmark" width="24" height="24">
-                            Education and employment prospects are elusive to the Timorese, rendering them stuck in a cycle of poverty. 
+                            • Education and employment prospects are elusive to the Timorese, rendering them stuck in a cycle of poverty. 
                         </li>
                         <li class="cs-li">
-                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/black-check.svg" alt="checkmark" width="24" height="24">
-                            Flooding issues have left Cocoon with an urgent need of raising funds to flood-proof their school compound.
+                            • Flooding issues have left Cocoon with an urgent need of raising funds to flood-proof their school compound.
                         </li>
                         <li class="cs-li">
-                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/black-check.svg" alt="checkmark" width="24" height="24">
-                            This young and spiritually scarred country is in great need of prayer for a national transformation
+                            • This young and spiritually scarred country is in great need of prayer for a national transformation
                         </li>
                     </ul>
                 </li>

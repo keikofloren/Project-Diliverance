@@ -24,72 +24,84 @@
         <img loading="lazy" decoding="async" src="{{ url_for('static', filename='images/event_banner.jpg') }}" alt="pills" width="1280" height="568" aria-hidden="true">
     </picture>
 </div>
-           
-
+       
 <!-- ============================================ -->
-<!--                   Gallery                    -->
+<!--                Side By Side                  -->
 <!-- ============================================ -->
 
-<section id="gallery-1446">
+<section id="RTsbs-1594">
     <div class="cs-container">
-        <div class="cs-content">
-            <div class="cs-flex">
-                <h2 class="cs-title">Gallery</h2>
-            </div>
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture cs-picture1">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{{ url_for('static', filename='images/events_2.jpg') }}">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="{{ url_for('static', filename='images/events_2.jpg') }}">
+                <img loading="lazy" decoding="async" src="{{ url_for('static', filename='images/events_2.jpg') }}" alt="mechanic" width="413" height="500">
+            </picture>
+            <!--Top Right image-->
+            <picture class="cs-picture cs-picture2">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{{ url_for('static', filename='images/events_1.jpg') }}">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="{{ url_for('static', filename='images/events_1.jpg') }}">
+                <img loading="lazy" decoding="async" src="{{ url_for('static', filename='images/events_1.jpg') }}" alt="mechanic" width="413" height="280">
+            </picture>
         </div>
-        <!--Gallery-->
-        <div class="cs-gallery">
-            <!--Picture 1-->
-            <picture class="cs-image">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg" alt="gallery" width="305" height="400">
-            </picture>
-            <!--Picture 2-->
-            <picture class="cs-image">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/melting-ice.jpeg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/melting-ice.jpeg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/melting-ice.jpeg" alt="gallery" width="305" height="400">
-            </picture>
-            <!--Picture 3-->
-            <picture class="cs-image">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/windmills.jpeg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/windmills.jpeg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/windmills.jpeg" alt="gallery" width="305" height="400">
-            </picture>
-            <!--Picture 4-->
-            <picture class="cs-image">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign2.jpeg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign2.jpeg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign2.jpeg" alt="gallery" width="305" height="400">
-            </picture>
-            <!--Picture 5-->
-            <picture class="cs-image">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/falling-rocks.jpeg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/falling-rocks.jpeg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/falling-rocks.jpeg" alt="gallery" width="305" height="400">
-            </picture>
-            <!--Picture 6-->
-            <picture class="cs-image">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign4.jpeg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign4.jpeg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign4.jpeg" alt="gallery" width="305" height="400">
-            </picture>
-            <!--Picture 7-->
-            <picture class="cs-image">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign3.jpeg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign3.jpeg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign3.jpeg" alt="gallery" width="305" height="400">
-            </picture>
-            <!--Picture 8-->
-            <picture class="cs-image">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/desert-tree.jpeg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/desert-tree.jpeg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/desert-tree.jpeg" alt="gallery" width="305" height="400">
-            </picture>
+        <div class="cs-content">
+            <span class="cs-topper">How It Started</span>
+            <h2 class="cs-title">The Call To Missions</h2>
+            <p class="cs-text">
+                An open call to embark on a mission trip to Timor Leste stirred a desire in our hearts to go out to the nations
+                - to reach out to the lost and the broken, and share the love of Christ.
+                <br><br> 
+                At first, each of us was hesitant.
+                <br><br>
+                 "What if I end up going alone? What if I don't have the time or resources?""
+                <br><br>
+                But what we didn't know was that God was already at work in the hearts of our friends, family and church community. 
+                We were encouraged by each other's desire to go into the mission field, 
+                as well as God's providence through the cheerful giving of friends and family, and it soon became clear that He was calling us to go together as a missional cell group.
+            </p>
         </div>
     </div>
 </section>
+
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="RTsbsr-1594">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture cs-picture1">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg" alt="mechanic" width="413" height="500">
+            </picture>
+            <!--Top Right image-->
+            <picture class="cs-picture cs-picture2">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/shoes2.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/shoes2.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/shoes2.jpg" alt="mechanic" width="413" height="280">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Going Into The Mission Field</span>
+            <h2 class="cs-title">Bringing Joy To The Village Children</h2>
+            <p class="cs-text">
+                Dive into the exhilarating world of fishing with Gill Rush, a dynamic and electrifying apparel brand designed exclusively for those who live for the rush of the catch. For avid anglers who feel the pulse quicken at the mere tug on their line, Gill Rush captures the essence of that heart-pounding moment when fish and fisherman lock in a fierce dance of skill and strategy.
+            </p>
+        </div>
+    </div>
+</section>
+
                                 
 
 {% endblock %}

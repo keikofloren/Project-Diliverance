@@ -78,56 +78,44 @@
     </div>
 
 <!-- ============================================ -->
-<!--                  Side By Side                -->
+<!--                     Stats                    -->
 <!-- ============================================ -->
 
-<section id="sbs-2295">
+<section id="stats-1687">
     <div class="cs-container">
-        <div class="cs-image-group">
-            <!--Main Image-->
-            <div class="cs-picture-wrapper1">
-                <picture class="cs-picture cs-picture1">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/construction-before1.png">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/construction-before1.png">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/construction-before1.png" alt="construction" width="272" height="337">
-                </picture>
+        <div class="cs-wrapper">
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)"
+                        srcset="{{ url_for('static', filename='images/paynow.jpg') }}">
+                <source media="(min-width: 601px)"
+                        srcset="{{ url_for('static', filename='images/paynow.jpg') }}">
+                <img loading="lazy" decoding="async"
+                        src="{{ url_for('static', filename='images/paynow.jpg') }}"
+                        alt="two people talking totally just friends" width="500" height="552">
+            </picture>
+            <div class="cs-content">
+                <h2 class="cs-title">Make A Donation</h2>
+                <p class="cs-text">
+                    Please use the QR code on this page and indicate "diliyouth" if you are supporting us financially.
+                    Thank you for your love and support!
+                </p>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        Your donations will go towards:
+                    </li>
+                    <li class="cs-li">
+                        • Education and employment prospects are elusive to the Timorese, rendering them stuck in a cycle of poverty. 
+                    </li>
+                    <li class="cs-li">
+                        • Flooding issues have left Cocoon with an urgent need of raising funds to flood-proof their school compound.
+                    </li>
+                    <li class="cs-li">
+                        • This young and spiritually scarred country is in great need of prayer for a national transformation
+                    </li>
+                </ul>
             </div>
-            <!--Small Image-->
-            <div class="cs-picture-wrapper2">
-                <picture class="cs-picture cs-picture2">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/construction-after1.png">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/construction-after1.png">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/construction-after1.png" alt="construction" width="243" height="367">
-                </picture>
-            </div>
-        </div>
-        <div class="cs-content">
-            <span class="cs-topper">Support Us</span>
-            <h2 class="cs-title">Make A Donation</h2>
-            <p class="cs-text">
-                Please use the QR code on this page and indicate "diliyouth" if you are supporting us financially.
-                Thank you for your love and support!
-            </p>
-            <h3 class="cs-h3">Our Process</h3>
-            <ul class="cs-ul">
-                <li class="cs-li">
-                    <strong>Initial Consultation</strong>: Identified the client's needs and their goals for future growth.
-                </li>
-                <li class="cs-li">
-                    <strong>Design Integration</strong>: Ensured the extension matched the original structure.
-                </li>
-                <li class="cs-li">
-                    <strong>Construction</strong>: Built the extension with high-quality materials.
-                </li>
-                <li class="cs-li">
-                    <strong>Interior Finishing</strong>: We integrated the new space with the existing interiors, enhancing functionality and aesthetics.
-                </li>
-            </ul>
         </div>
     </div>
 </section>
+                                
                                 
