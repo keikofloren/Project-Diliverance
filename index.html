@@ -38,6 +38,49 @@
 </section>
 
 <!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-1161">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture cs-picture1">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{{ url_for('static', filename='images/we_are_back_2.jpg') }}">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="{{ url_for('static', filename='images/we_are_back_2.jpg') }}">
+                <img loading="lazy" decoding="async" src="{{ url_for('static', filename='images/we_are_back_2.jpg') }}" alt="appliance" width="630" height="390">
+            </picture>
+            <!--Bottom right image-->
+            <picture class="cs-picture cs-picture2">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{{ url_for('static', filename='images/we_are_back.jpg') }}">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="{{ url_for('static', filename='images/we_are_back.jpg') }}">
+                <img loading="lazy" decoding="async" src="{{ url_for('static', filename='images/we_are_back.jpg') }}" alt="appliance" width="461" height="300">
+            </picture>
+            <!--Splash Graphic-->
+            <img class="cs-graphic cs-graphic1" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/splash-4.svg" alt="splash" width="1154" height="505" aria-hidden="true">
+            <!--Tire Mark-->
+            <img class="cs-graphic cs-graphic2" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/tire-mark.svg" alt="tire mark" width="1085" height="322" aria-hidden="true">
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">We Are Back!</span>
+            <h2 class="cs-title">Project Diliverance Returns In 2025</h2>
+            <p class="cs-text">
+                Missional work goes beyond delivering services—it’s about nurturing the kingdom relationships we’ve built with the local community. 
+                <br><br>
+                Project Diliverance in 2025 returns with another trip to Dili from <b>June 3 to 10</b>, where we will be continuing our work with the children and youth of Cocoon and Remexio. 
+                Our mission also extends to empowering young adults by providing vocational training, helping them establish self-reliant, sustainable livelihoods.
+            </p>
+            <a href="donate" class="cs-button-solid">Support Us</a>
+        </div>
+    </div>
+</section>
+                                
+
+<!-- ============================================ -->
 <!--                  About                       -->
 <!-- ============================================ -->
 
