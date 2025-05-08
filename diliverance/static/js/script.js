@@ -31,3 +31,7 @@ for (const item of dropDowns) {
 	};
 	item.addEventListener('click', onClick);
 }
+
+function openInNewTab(url) {
+	window.open(url, '_blank');
+}
