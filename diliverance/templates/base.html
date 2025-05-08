@@ -56,7 +56,9 @@
     {% block css %}{% endblock %}
     <body>
         {% block body %}{% endblock %}
+        
         <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+        
         <!-- ============================================ -->
         <!--                  Donate                      -->
         <!-- ============================================ -->
@@ -69,7 +71,13 @@
                     <p class="cs-text">
                         You can support us both financially and in prayer.
                     </p>
-                    <a href="donate" class="cs-button-solid">Where To Donate?</a>
+                    <div class="cs-button-group">
+                        <a href="donate" class="cs-button-solid cs-button">Where To Donate?</a>
+                        <a href="openInNewTab('https://t.me/+viRCcggP9qA2MTRl')" class="cs-button-transparent cs-button">
+                            <img class="cs-img" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg" alt="play icon" width="17" height="17">
+                            Telegram Channel
+                        </a>
+                    </div>       
                 </div>
             </div>
             <!-- Background Image-->
