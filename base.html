@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <html>
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="home" class="cs-logo" aria-label="back to home">
+                <img src="/static/images/Project Diliverance.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="home" class="cs-li-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="aboutdili" class="cs-li-link">
+                                About Dili
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="events" class="cs-li-link">
+                                Events
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="meettheteam" class="cs-li-link">
+                                Meet The Team
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="donate" class="cs-button-solid cs-nav-button">Support Us</a>
+        </div>
+    </header>
+    <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/apple-touch-icon.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon-16x16.png') }}">
+        <link rel="manifest" href="{{ url_for('static', filename='images/site.webmanifest') }}">
+        <title>Project Diliverance</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
+    </head>
+    {% block css %}{% endblock %}
+    <body>
+        {% block body %}{% endblock %}
+        
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+        <!-- ============================================ -->
+        <!--                  Donate                      -->
+        <!-- ============================================ -->
+
+        <section id="cta-51">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Support Us</span>
+                    <h2 class="cs-title">Get Involved With Us Today</h2>
+                    <p class="cs-text">
+                        You can support us both financially and in prayer.
+                    </p>
+                    <div class="cs-button-group">
+                        <a href="donate" class="cs-button-solid cs-button">Where To Donate?</a>
+                        <a href="javascript:void(0);" onclick="openInNewTab('https://t.me/+viRCcggP9qA2MTRl')" class="cs-button-transparent cs-button">
+                            <img class="cs-img" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg" alt="play icon" width="17" height="17">
+                            Telegram Channel
+                        </a>
+                    </div>       
+                </div>
+            </div>
+            <!-- Background Image-->
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="{{ url_for('static', filename='images/bottom_banner.jpg') }}">
+                <source media="(min-width: 601px)" srcset="{{ url_for('static', filename='images/bottom_banner.jpg') }}">
+                <img loading="lazy" decoding="async" src="{{ url_for('static', filename='images/bottom_banner.jpg') }}" alt="cabinets" width="1920" height="1280" aria-hidden="true">
+            </picture>
+        </section>
+    </body>                    
+    </html>
